@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-moment-form',
@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './moment-form.component.scss'
 })
 export class MomentFormComponent {
+  @Input() btnText!: string;
+
+  constructor(){ }
+
+  ngOnInit(): void{
+
+  }
 
 }
